@@ -1,11 +1,12 @@
 {
   "name": "thailand-province-service",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "thailand province and district service",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ."
+    "dev": "nodemon ./src",
+    "knex": "./node_modules/.bin/knex"
   },
   "keywords": [
     "thailand",
@@ -25,12 +26,12 @@
   "author": "Jisack",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^4.0.0",
-    "hapi": "^16.6.2",
-    "knex": "^0.14.0",
-    "mysql": "^2.15.0"
+    "dotenv": "^6.0.0",
+    "hapi": "^17.5.2",
+    "knex": "^0.15.2",
+    "mysql": "^2.16.0"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.18.4"
   }
 }

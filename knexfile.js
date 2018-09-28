@@ -2,10 +2,11 @@ require('dotenv').config({path: './.env'});
 module.exports  = {
     development: {
         migrations: {
-            tableName: 'thailand_province'
+            directory: './src/migrations',
+            tableName: 'migrations'
         },
         seeds: {
-            tableName: './seeds'
+            directory: './src/seeds'
         },
         client: 'mysql',
         connection: {
@@ -19,10 +20,11 @@ module.exports  = {
     },
     production: {
         migrations: {
-            tableName: 'thailand_province'
+            directory: './src/migrations',
+            tableName: 'migrations'
         },
         seeds: {
-            tableName: './seeds'
+            directory: './src/seeds'
         },
         client: 'mysql',
         connection: {

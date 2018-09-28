@@ -10,15 +10,15 @@ exports.seed = (knex, Promise) => {
           province_id: data.province_id,
           name: data.name_th,
           name_eng: data.name_en
-        }
-      })
+        };
+      });
       // console.log(amhpurs)
       // Inserts seed entries
       return knex('amphurs').insert(amphurs_data);
 
     }).then(result => {
-      console.log(result,'amphurs seed success')
+      console.log(result,'amphurs seed success');
     }).catch(err => {
-      console.log(err,'amphurs seed failed')
+      console.log(err,'amphurs seed failed');
     });
 };
